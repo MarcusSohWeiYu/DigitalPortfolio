@@ -1,5 +1,35 @@
+@font-face {
+    font-family: 'Belinda';
+    src: url(../Font/Belinda\ Script.ttf);
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../Font/Avenir\ Light.ttf);
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url(../Font/Syne.ttf);
+}
+
+
+.belinda {
+    font-family: Belinda;
+    font-size: 70px;
+  }
+
+.avenir{
+    font-family: Avenir;
+}
+
+.syne {
+    font-family: Syne;
+}
+
 nav {
     background: #A3D9F6;
+    font-family: Syne;
 }
 
 section {
