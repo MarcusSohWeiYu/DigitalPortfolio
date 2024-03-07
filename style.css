@@ -9,11 +9,11 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('../Font/AvenirLight.eot'); /* IE9 Compat Modes */
-    src: url('../Font/AvenirLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../Font/AvenirLight.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../Font/AvenirLight.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../Font/AvenirLight.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../Font/Avenir.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Avenir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Avenir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Avenir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Avenir.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
