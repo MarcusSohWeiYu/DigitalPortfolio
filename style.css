@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Belinda';
-    src: url('../font/Belinda.eot'); /* IE9 Compat Modes */
-    src: url('../font/Belinda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/Belinda.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/Belinda.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../font/Belinda.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../Font/Belinda.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Belinda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Belinda.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Belinda.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Belinda.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Avenir';
-    src: url('../font/Avenir.eot'); /* IE9 Compat Modes */
-    src: url('../font/Avenir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/Avenir.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/Avenir.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../font/Avenir.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../Font/Avenir.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Avenir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Avenir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Avenir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Avenir.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Syne';
-    src: url('../font/Syne.eot'); /* IE9 Compat Modes */
-    src: url('../font/Syne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../font/Syne.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../font/Syne.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../font/Syne.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../Font/Syne.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Syne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Syne.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Syne.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Syne.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 
