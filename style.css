@@ -1,17 +1,30 @@
 @font-face {
     font-family: 'Belinda';
-    src: url(../Font/Belinda\ Script.ttf);
+    src: url('../Font/Belinda.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Belinda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Belinda.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Belinda.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Belinda.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Avenir';
-    src: url(../Font/Avenir\ Light.ttf);
+    src: url('../Font/AvenirLight.eot'); /* IE9 Compat Modes */
+    src: url('../Font/AvenirLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/AvenirLight.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/AvenirLight.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/AvenirLight.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Syne';
-    src: url(../Font/Syne.ttf);
+    src: url('../Font/Syne.eot'); /* IE9 Compat Modes */
+    src: url('../Font/Syne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../Font/Syne.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../Font/Syne.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../Font/Syne.ttf') format('truetype'); /* Safari, Android, iOS */
 }
+
 
 
 
