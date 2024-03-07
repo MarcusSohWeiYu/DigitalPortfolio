@@ -14,10 +14,24 @@
 }
 
 
+
+/* Font Classes */
 .belinda {
     font-family: Belinda;
     font-size: 70px;
   }
+
+@media (max-width: 1000px) {
+    .belinda {
+        font-size: 50px; /* Font size for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .belinda {
+        text-align: center;
+    }
+}
 
 .avenir{
     font-family: Avenir;
@@ -27,6 +41,11 @@
     font-family: Syne;
 }
 
+h2{
+    font-size: 50px;
+}
+
+/* Nav Section */
 nav {
     background: #A3D9F6;
     font-family: Syne;
@@ -42,15 +61,12 @@ body::before{
     height:80px;
 }
 
+/* Skills Section */
 .skillsCard {
     min-height: 300px
 }
 
-.profile {
-    width: 40%;
-    margin: 30px;
-}
-
+/* Experience Section */
 .timeline {
     position: relative;
     padding-left: 30px; /* Space for the timeline line */
@@ -88,7 +104,6 @@ body::before{
     z-index: 1;
 }
 
-/* Additional custom styles */
 .resume-title {
     color: #495057;
     margin-bottom: 10px;
@@ -106,4 +121,34 @@ body::before{
 
 .resume-role, .resume-program {
     color: #495057;
+}
+
+/* Contact Me Section */
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.contact-form .form-control {
+    border-color: transparent;
+    border-bottom-color: #000; /* Adjust the border color as needed */
+    border-radius: 0;
+    border-width: 2px;
+    color: black;
+    background-color: #f8f9fa;
+}
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+.contact-form .btn-primary {
+    background-color: #000; /* Adjust the button background color as needed */
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.contact-form .btn-primary:hover {
+    background-color: #333; /* Adjust the button hover color as needed */
 }
