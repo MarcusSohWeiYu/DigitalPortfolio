@@ -1,0 +1,79 @@
+nav {
+    background: #A3D9F6;
+}
+
+section {
+    background: #A3D9F6;
+}
+
+body::before{
+    display:block;
+    content:"";
+    height:80px;
+}
+
+.skillsCard {
+    min-height: 300px
+}
+
+.profile {
+    width: 40%;
+    margin: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the timeline line */
+    margin-top: 10px; /* Space above the timeline */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px; /* Position the line in the center of the left padding */
+    top: 30px; /* Start the line below the header, adjust this value as needed */
+    bottom: 30px; /* This value should be roughly the height of the last timeline item */
+    width: 2px;
+    background: #495057;
+}
+
+.timeline-item {
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* Adjust horizontally to position the bullets on the line */
+    top: 15px; /* Center the bullet vertically with the item's content */
+    height: 20px;
+    width: 20px;
+    border: 2px solid #495057;
+    border-radius: 50%;
+    background: white;
+    z-index: 1;
+}
+
+/* Additional custom styles */
+.resume-title {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.resume-duration {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.resume-company, .resume-institute {
+    font-weight: bold;
+    color: #000;
+}
+
+.resume-role, .resume-program {
+    color: #495057;
+}
