@@ -44,6 +44,19 @@
     margin-bottom: 5px;
 }
 
+.project-tech-stack-angular {
+    width: 7%;
+}
+
+.project-tech-stack-firebase {
+    width: 4%;
+}
+
+.project-tech-stack {
+    width: 5%;
+    margin-right: 5px;
+}
+
 @media (max-width: 1000px) {
     .pacifico {
         font-size: 50px; /* Font size for smaller screens */
