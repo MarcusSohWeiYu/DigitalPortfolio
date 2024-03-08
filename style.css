@@ -33,6 +33,11 @@
     font-size: 70px;
   }
 
+.home {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 /* Tech Stack */
 .tech-stack-image {
     width: 50%; /* Default width for larger screens */
