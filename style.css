@@ -27,7 +27,7 @@
 
 
 /* Font Classes */
-.pacifico {
+.pacifico0 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-size: 70px;
@@ -121,10 +121,6 @@ body::before{
     content:"";
     height:80px;
 }
-
-
-
-
 
 /* Skills Section */
 .skillsCard {
