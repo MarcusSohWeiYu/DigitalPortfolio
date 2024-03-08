@@ -27,29 +27,57 @@
 
 
 /* Font Classes */
-.belinda {
-    font-family: "Belinda";
+.pacifico {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
     font-size: 70px;
   }
 
+/* Tech Stack */
+.tech-stack-image {
+    width: 50%; /* Default width for larger screens */
+    margin-bottom: 5px;
+}
+
+.tech-stack-firebase-image {
+    width: 37%;
+    margin-bottom: 5px;
+}
+
 @media (max-width: 1000px) {
-    .belinda {
+    .pacifico {
         font-size: 50px; /* Font size for smaller screens */
     }
 }
 
 @media (max-width: 767px) {
-    .belinda {
+    .pacifico {
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .aboutMe {
+        font-size: 15px;
     }
 
     .tech-stack-title {
-        font-size: 10px; /* Adjust as needed */
+        font-size: 5.5px; /* Adjust as needed */
     }
 
     .tech-stack-image {
-        width: 60%; /* Increased width for mobile screens */
+        width: 100%; /* Increased width for mobile screens */
+    }
+
+    .tech-stack-firebase-image {
+        width: 77%;
+    }
+
+    .skills-title{
+        font-size: 20px;
+    }
+
+    .skills-text{
+        font-size: 15px;
     }
 }
 
@@ -81,10 +109,9 @@ body::before{
     height:80px;
 }
 
-/* Tech Stack */
-.tech-stack-image {
-    width: 50%; /* Default width for larger screens */
-}
+
+
+
 
 /* Skills Section */
 .skillsCard {
