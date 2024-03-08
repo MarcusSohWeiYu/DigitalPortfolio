@@ -57,6 +57,20 @@
     margin-right: 5px;
 }
 
+.tech-stack-body {
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.automate {
+    padding-bottom: 11px;
+}
+
+.apps{
+    padding-top: 5px;
+}
+
 @media (max-width: 1000px) {
     .pacifico {
         font-size: 50px; /* Font size for smaller screens */
@@ -73,12 +87,30 @@
         font-size: 15px;
     }
 
+    .apps{
+        padding-top: 0px;
+    }
+
     .tech-stack-title {
-        font-size: 5.5px; /* Adjust as needed */
+        font-size: 8px; /* Adjust as needed */
     }
 
     .tech-stack-image {
         width: 100%; /* Increased width for mobile screens */
+    }
+
+    .tech-stack-body {
+        padding: 5px;
+        padding-bottom: 1px;
+        padding-top: 10px;
+    }
+
+    .automate {
+        padding-bottom: 15px;
+    }
+
+    .tech-stack-body img {
+        width: 70%;
     }
 
     .tech-stack-firebase-image {
