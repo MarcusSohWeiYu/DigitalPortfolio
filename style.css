@@ -43,6 +43,14 @@
         text-align: center;
         font-size: 40px;
     }
+
+    .tech-stack-title {
+        font-size: 10px; /* Adjust as needed */
+    }
+
+    .tech-stack-image {
+        width: 60%; /* Increased width for mobile screens */
+    }
 }
 
 .avenir{
@@ -71,6 +79,11 @@ body::before{
     display:block;
     content:"";
     height:80px;
+}
+
+/* Tech Stack */
+.tech-stack-image {
+    width: 50%; /* Default width for larger screens */
 }
 
 /* Skills Section */
