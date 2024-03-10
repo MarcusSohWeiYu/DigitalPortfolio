@@ -38,6 +38,11 @@
 }
 
 /* Tech Stack */
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
 .tech-stack-image {
   width: 50%; /* Default width for larger screens */
   margin-bottom: 5px;
@@ -73,6 +78,18 @@
 
 .apps {
   padding-top: 5px;
+}
+
+.power-automate-icon {
+  padding-bottom: 11px;
+}
+
+.figma-icon {
+  padding-bottom: 11px;
+}
+
+.power-apps-icon {
+  padding-bottom: 9px;
 }
 
 .avenir {
@@ -261,8 +278,16 @@ body::before {
     padding-top: 10px;
   }
 
-  .automate {
+  .power-automate-icon {
     padding-bottom: 15px;
+  }
+
+  .figma-icon {
+    padding-bottom: 15px;
+  }
+
+  .power-apps-icon {
+    padding-bottom: 17px;
   }
 
   .tech-stack-body img {
