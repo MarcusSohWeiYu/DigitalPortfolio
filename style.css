@@ -251,3 +251,34 @@ body::before{
     background-color: #333; /* Adjust the button hover color as needed */
 }
 
+/*Download CV Button */
+
+.download-icon {
+    height: 28px;
+    margin-left: 5px;
+    padding-bottom: 4px;
+}
+
+.linkedIn-icon {
+    height: 55px;
+    margin-left: 5px;
+}
+
+.download-cv-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px; /* Adjust for roundness */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 16px; /* Adjust as needed */
+    font-weight: bold; /* Makes the text bold */
+  }
+  
+  .download-cv-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
