@@ -1,284 +1,303 @@
 @font-face {
-    font-family: 'Belinda';
-    src: url('../Font/Belinda.eot'); /* IE9 Compat Modes */
-    src: url('../Font/Belinda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../Font/Belinda.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../Font/Belinda.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../Font/Belinda.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: "Belinda";
+  src: url("../Font/Belinda.eot"); /* IE9 Compat Modes */
+  src: url("../Font/Belinda.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Font/Belinda.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../Font/Belinda.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../Font/Belinda.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'Avenir';
-    src: url('../Font/Avenir.eot'); /* IE9 Compat Modes */
-    src: url('../Font/Avenir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../Font/Avenir.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../Font/Avenir.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../Font/Avenir.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: "Avenir";
+  src: url("../Font/Avenir.eot"); /* IE9 Compat Modes */
+  src: url("../Font/Avenir.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Font/Avenir.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../Font/Avenir.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../Font/Avenir.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'Syne';
-    src: url('../Font/Syne.eot'); /* IE9 Compat Modes */
-    src: url('../Font/Syne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../Font/Syne.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../Font/Syne.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../Font/Syne.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: "Syne";
+  src: url("../Font/Syne.eot"); /* IE9 Compat Modes */
+  src: url("../Font/Syne.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Font/Syne.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../Font/Syne.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../Font/Syne.ttf") format("truetype"); /* Safari, Android, iOS */
 }
-
 
 /* Font Classes */
 .pacifico {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-size: 70px;
-  }
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 70px;
+}
 
 .home {
-    padding-bottom: 0;
-    margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Tech Stack */
 .tech-stack-image {
-    width: 50%; /* Default width for larger screens */
-    margin-bottom: 5px;
+  width: 50%; /* Default width for larger screens */
+  margin-bottom: 5px;
 }
 
 .tech-stack-firebase-image {
-    width: 37%;
-    margin-bottom: 5px;
+  width: 37%;
+  margin-bottom: 5px;
 }
 
 .project-tech-stack-angular {
-    width: 7%;
+  width: 7%;
 }
 
 .project-tech-stack-firebase {
-    width: 4%;
+  width: 4%;
 }
 
 .project-tech-stack {
-    width: 5%;
-    margin-right: 5px;
+  width: 5%;
+  margin-right: 5px;
 }
 
 .tech-stack-body {
-    padding: 5px;
-    padding-bottom: 0px;
-    padding-top: 10px;
+  padding: 5px;
+  padding-bottom: 0px;
+  padding-top: 10px;
 }
 
 .automate {
-    padding-bottom: 11px;
+  padding-bottom: 11px;
 }
 
-.apps{
-    padding-top: 5px;
+.apps {
+  padding-top: 5px;
 }
 
-@media (max-width: 1000px) {
-    .pacifico {
-        font-size: 50px; /* Font size for smaller screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .pacifico {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .aboutMe {
-        font-size: 15px;
-    }
-
-    .apps{
-        padding-top: 0px;
-    }
-
-    .tech-stack-title {
-        font-size: 8px; /* Adjust as needed */
-    }
-
-    .tech-stack-image {
-        width: 100%; /* Increased width for mobile screens */
-    }
-
-    .tech-stack-body {
-        padding: 5px;
-        padding-bottom: 1px;
-        padding-top: 10px;
-    }
-
-    .automate {
-        padding-bottom: 15px;
-    }
-
-    .tech-stack-body img {
-        width: 70%;
-    }
-
-    .tech-stack-firebase-image {
-        width: 77%;
-    }
-
-    .skills-title{
-        font-size: 20px;
-    }
-
-    .skills-text{
-        font-size: 15px;
-    }
-}
-
-.avenir{
-    font-family: Avenir;
+.avenir {
+  font-family: Avenir;
 }
 
 .syne {
-    font-family: Syne;
+  font-family: Syne;
 }
 
-h2{
-    font-size: 50px;
+h2 {
+  font-size: 50px;
 }
 
 /* Nav Section */
 nav {
-    background: #A3D9F6;
-    font-family: Syne;
+  background: #a3d9f6;
+  font-family: Syne;
 }
 
 section {
-    background: #A3D9F6;
+  background: #a3d9f6;
 }
 
-body::before{
-    display:block;
-    content:"";
-    height:80px;
+body::before {
+  display: block;
+  content: "";
+  height: 80px;
 }
 
 /* Skills Section */
 .skillsCard {
-    min-height: 300px
+  min-height: 300px;
 }
 
 /* Experience Section */
 .timeline {
-    position: relative;
-    padding-left: 30px; /* Space for the timeline line */
-    margin-top: 10px; /* Space above the timeline */
+  position: relative;
+  padding-left: 30px; /* Space for the timeline line */
+  margin-top: 10px; /* Space above the timeline */
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 15px; /* Position the line in the center of the left padding */
-    top: 30px; /* Start the line below the header, adjust this value as needed */
-    bottom: 30px; /* This value should be roughly the height of the last timeline item */
-    width: 2px;
-    background: #495057;
+  content: "";
+  position: absolute;
+  left: 15px; /* Position the line in the center of the left padding */
+  top: 30px; /* Start the line below the header, adjust this value as needed */
+  bottom: 30px; /* This value should be roughly the height of the last timeline item */
+  width: 2px;
+  background: #495057;
 }
 
 .timeline-item {
-    position: relative;
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
 .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -25px; /* Adjust horizontally to position the bullets on the line */
-    top: 15px; /* Center the bullet vertically with the item's content */
-    height: 20px;
-    width: 20px;
-    border: 2px solid #495057;
-    border-radius: 50%;
-    background: white;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  left: -25px; /* Adjust horizontally to position the bullets on the line */
+  top: 15px; /* Center the bullet vertically with the item's content */
+  height: 20px;
+  width: 20px;
+  border: 2px solid #495057;
+  border-radius: 50%;
+  background: white;
+  z-index: 1;
 }
 
 .resume-title {
-    color: #495057;
-    margin-bottom: 10px;
+  color: #495057;
+  margin-bottom: 10px;
 }
 
 .resume-duration {
-    font-size: 0.8em;
-    color: #6c757d;
+  font-size: 0.8em;
+  color: #6c757d;
 }
 
-.resume-company, .resume-institute {
-    font-weight: bold;
-    color: #000;
+.resume-company,
+.resume-institute {
+  font-weight: bold;
+  color: #000;
 }
 
-.resume-role, .resume-program {
-    color: #495057;
+.resume-role,
+.resume-program {
+  color: #495057;
 }
 
 /* Contact Me Section */
 .contact-form {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #f8f9fa; /* Adjust the background color as needed */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .contact-form .form-control {
-    border-color: transparent;
-    border-bottom-color: #000; /* Adjust the border color as needed */
-    border-radius: 0;
-    border-width: 2px;
-    color: black;
-    background-color: #f8f9fa;
+  border-color: transparent;
+  border-bottom-color: #000; /* Adjust the border color as needed */
+  border-radius: 0;
+  border-width: 2px;
+  color: black;
+  background-color: #f8f9fa;
 }
 .contact-form .form-control:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 .contact-form .btn-primary {
-    background-color: #000; /* Adjust the button background color as needed */
-    border: none;
-    border-radius: 30px;
-    padding: 10px 30px;
+  background-color: #000; /* Adjust the button background color as needed */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
 }
 .contact-form .btn-primary:hover {
-    background-color: #333; /* Adjust the button hover color as needed */
+  background-color: #333; /* Adjust the button hover color as needed */
 }
 
 /*Download CV Button */
-
 .download-icon {
-    height: 28px;
-    margin-left: 5px;
-    padding-bottom: 4px;
+  height: 25px;
+  margin-left: 5px;
+  padding-bottom: 4px;
 }
 
 .linkedIn-icon {
-    height: 55px;
-    margin-left: 5px;
+  height: 43px;
+  margin-left: 5px;
 }
 
 .download-cv-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0px;
-    background-color: white;
-    color: black;
-    border: 3px solid black;
-    border-radius: 10px; /* Adjust for roundness */
-    text-decoration: none; /* Removes the underline from links */
-    font-size: 16px; /* Adjust as needed */
-    font-weight: bold; /* Makes the text bold */
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 0px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 8px; /* Adjust for roundness */
+  text-decoration: none; /* Removes the underline from links */
+  font-size: 15px; /* Adjust as needed */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.download-cv-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .pacifico {
+    font-size: 50px; /* Font size for smaller screens */
   }
-  
-  .download-cv-btn:hover {
-    background-color: black;
-    color: white;
+}
+
+@media (max-width: 767px) {
+  .pacifico {
+    text-align: center;
+    font-size: 30px;
   }
-  
+
+  .aboutMe {
+    font-size: 15px;
+  }
+
+  .apps {
+    padding-top: 0px;
+  }
+
+  .tech-stack-title {
+    font-size: 8px; /* Adjust as needed */
+  }
+
+  .tech-stack-image {
+    width: 100%; /* Increased width for mobile screens */
+  }
+
+  .tech-stack-body {
+    padding: 5px;
+    padding-bottom: 1px;
+    padding-top: 10px;
+  }
+
+  .automate {
+    padding-bottom: 15px;
+  }
+
+  .tech-stack-body img {
+    width: 70%;
+  }
+
+  .tech-stack-firebase-image {
+    width: 77%;
+  }
+
+  .skills-title {
+    font-size: 20px;
+  }
+
+  .skills-text {
+    font-size: 15px;
+  }
+
+  /*Download CV Button */
+  .download-icon {
+    height: 15px;
+    margin-left: 5px;
+    padding-bottom: 4px;
+  }
+
+  .linkedIn-icon {
+    height: 29px;
+    margin-left: 3px;
+  }
+
+  .download-cv-btn {
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 2px solid black;
+  }
+}
+
+
