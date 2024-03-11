@@ -39,8 +39,9 @@
 
 /* Tech Stack */
 .card {
-  border: 1px solid black;
-  border-radius: 8px;
+  border: 0px solid black;
+  border-radius: 17px;
+  background-color: #CEEBFA;
 }
 
 .tech-stack-image {
@@ -244,6 +245,15 @@ body::before {
   color: white;
 }
 
+/* Projects Section */
+.first-project{
+  margin-top: 100px;
+}
+
+.projects{
+  margin-top: 150px;
+}
+
 @media (max-width: 1000px) {
   .pacifico {
     font-size: 50px; /* Font size for smaller screens */
@@ -323,6 +333,15 @@ body::before {
     padding: 5px 10px;
     border: 2px solid black;
   }
+
+  /* Projects Section */
+.first-project{
+  margin-top: 50px;
+}
+
+.projects{
+  margin-top: 50px;
+}
 }
 
 
