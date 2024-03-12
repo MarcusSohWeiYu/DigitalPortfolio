@@ -206,6 +206,80 @@ body::before {
   color: grey;
 }
 
+/* Testimonial Section */
+
+.testimonial-container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .title {
+  font-size: 35px;;
+  font-weight: 600px;
+  text-transform: capitalize;
+  color: black;
+  line-height: 1.2;
+}
+
+.testimonials {
+  padding: 100px 0px;
+}
+
+.testimonials-item {
+  background-color: #CEEBFA;
+  padding: 30px;
+  border-radius: 30px;
+  min-height: 255px;
+  font-family: 'Syne';
+}
+
+.testimonials-item .info{
+  display: flex;
+  align-items: center;
+}
+.testimonials-item img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+}
+
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: black;
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  color: grey;
+}
+
+.testimonials .swiper-pagination{
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: #1fa1e7;
+}
+
+
 @media (max-width: 1000px) {
   .pacifico {
     font-size: 50px; /* Font size for smaller screens */
