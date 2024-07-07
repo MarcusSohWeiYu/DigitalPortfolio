@@ -45,7 +45,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <title>Soh Wei Yu - Aspiring Software Engineer</title>
+    <title>Soh Wei Yu</title>
   </head>
 
   <body>
@@ -1171,7 +1171,19 @@
     </script>
 
     <!--ChatBot-->
-    
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '668a54ee6f6c68b120a305ec' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
 
   </body>
 </html>
