@@ -25,9 +25,87 @@
     /* Pretty Modern Browsers */ url("../Font/Syne.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: "Andria_Signature";
+  src: url("../Font/AndriaSignature.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SC";
+  src: url("../Font/SouthCatalonia.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ED";
+  src: url("../Font/ev.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BS";
+  src: url("../Font/bs.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "N";
+  src: url("../Font/N.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "jb";
+  src: url("../Font/jb.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "rb";
+  src: url("../Font/roadbust.otf") format("opentype");
+}
+
+.jb {
+  font-family: "rb", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.jb {
+  font-family: "jb", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.sc {
+  font-family: "SC", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.n {
+  font-family: "n", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.ed {
+  font-family: "ED", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.bs {
+  font-family: "bs", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
+  font-weight: 400;
+  font-size: 50px;
+}
+
 /* Font Classes */
 .pacifico {
   font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.Andria_Signature {
+  font-family: "Andria_Signature", sans-serif; /* Fallback to sans-serif if the custom font doesn't load */
   font-weight: 400;
   font-size: 70px;
 }
@@ -74,6 +152,10 @@ h2 {
   font-size: 50px;
 }
 
+.impact{
+  color: #F5CD47;
+}
+
 /* Nav Section */
 nav {
   background: #a3d9f6;
@@ -104,6 +186,14 @@ body::before {
   border-radius: 20px;
   font-family: 'Syne';
   min-height: 190px;
+}
+
+.ProcoLink{
+  text-decoration: none;
+}
+
+.mt-20{
+  margin-top: 20px;
 }
 
 .resume-entry img {
@@ -195,6 +285,7 @@ body::before {
 .first-project{
   margin-top: 100px;
 }
+
 .projects{
   margin-top: 150px;
 }
