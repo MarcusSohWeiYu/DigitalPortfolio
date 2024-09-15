@@ -152,9 +152,42 @@ h2 {
   font-size: 50px;
 }
 
-.impact{
-  color: #F5CD47;
+.impact {
+  /* Gradient text */
+  background: linear-gradient(
+  45deg,
+  #ff9100 20%,
+  #fbdc5c 33%,
+  #a0cbd1 50%,
+  #fbdc5c 100%
+);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Text shadow effect using filter */
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+  
+  /* Fallback color */
+  color: #fbdc5c;
+  
+  /* Animation */
+  animation: gradientMove 3s ease infinite;
 }
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* Nav Section */
 nav {
