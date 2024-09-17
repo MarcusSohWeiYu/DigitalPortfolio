@@ -27,9 +27,15 @@ body::before {
   content: "";
   height: 80px;
 }
-.home {
-  padding-bottom: 0;
-  margin-bottom: 0;
+
+.border-bottom-transition{
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.border-top-transition{
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 /* #region Navbar*/
@@ -96,29 +102,53 @@ nav {
 /* #endregion */
 
 /* #region Tech Stack */
+
+.tech-stack-arrow{
+  border: 1px solid grey;
+  background-color: grey;
+  border-radius: 50%;
+  padding-top:0px;
+  padding-bottom:4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 5px;
+}
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px 20px; /* row-gap column-gap */
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-grid p {
+  white-space: nowrap; /* Prevents text from wrapping */
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* #endregion */
+
+/* #region Services */
+.automate {
+  padding-bottom: 11px;
+}
 .card {
   border: 0px solid black;
-  border-radius: 17px;
+  border-radius: 40px;
   background-color:#f4f4f4;
   font-family: "Syne";
   font-weight: 500;
 }
-.tech-stack-image {
-  width: 50%; /* Default width for larger screens */
-  margin-bottom: 5px;
+
+.skills-title {
+  background-color: #dcf247; /* Light green color */
+  display: inline-block; /* Makes the background only as wide as the text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight:1000;
 }
-.project-tech-stack {
-  width: 6%;
-  margin-right: 5px;
-}
-.tech-stack-body {
-  padding: 5px;
-  padding-bottom: 0px;
-  padding-top: 10px;
-}
-.automate {
-  padding-bottom: 11px;
-}
+
 .apps {
   padding-top: 5px;
 }
