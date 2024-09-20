@@ -1,20 +1,34 @@
 /* #region Fonts */
 @font-face {
-  font-family: "Syne";
-  src: url("../Font/Syne.eot"); /* IE9 Compat Modes */
-  src: url("../Font/Syne.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../Font/Syne.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../Font/Syne.woff") format("woff"),
-    /* Pretty Modern Browsers */ url("../Font/Syne.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "Eastman-Medium";
+  src: url("../Font/Eastman-Grotesque-Medium-trial.otf"); /* IE9 Compat Modes */
+  src: url("../Font/Eastman-Grotesque-Medium-trial.otf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Font/Eastman-Grotesque-Medium-trial.otf") format("woff2"),
+    /* Super Modern Browsers */ url("../Font/Eastman-Grotesque-Medium-trial.otf") format("woff"),
+    /* Pretty Modern Browsers */ url("../Font/Eastman-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: "rb";
-  src: url("../Font/roadbust.otf") format("opentype");
+  font-family: "Eastman-Bold";
+  src: url("../Font/Eastman-Grotesque-Black-trial.otf");
 }
 
-.syne {
-  font-family: Syne;
+@font-face {
+  font-family: "Eastman-ExtraBold";
+  src: url("../Font/Eastman-Grotesque-ExtraBold-trial.otf");
+}
+
+
+.Eastman-Medium {
+  font-family: "Eastman-Medium";
+}
+
+.Eastman-Bold {
+  font-family: "Eastman-Bold";
+}
+
+.Eastman-ExtraBold {
+  font-family: "Eastman-ExtraBold";
 }
 /* #endregion */
 
@@ -38,10 +52,19 @@ body::before {
   border-top-right-radius: 50px;
 }
 
+.container {
+  max-width: 1100px; /* Adjust this value as needed */
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
 /* #region Navbar*/
 nav {
   background: white;
-  font-family: Syne;
+  font-family: Eastman-Medium;
   color: black;
   font-weight: 700;
 }
@@ -137,7 +160,7 @@ nav {
   border: 0px solid black;
   border-radius: 40px;
   background-color:#f4f4f4;
-  font-family: "Syne";
+  font-family: "Eastman-Medium";
   font-weight: 500;
 }
 
@@ -161,29 +184,31 @@ h2 {
 /* #endregion */
 
 /* #region Experience Section & Education*/
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+  gap: 15px; /* Space between grid items */
+  padding: 20px 0;
+}
+
+.experience-grid .resume-entry:nth-child(odd) {
+  justify-self: end; /* Aligns to the end (right) of its grid cell */
+}
+
 .resume-entry {
-  background: #CEEBFA;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  background: white;
+  border-radius: 30px;
+  padding: 15px;
   display: flex;
   align-items: center;
-  border-radius: 20px;
-  font-family: 'Syne';
-  min-height: 190px;
-}
-
-.ProcoLink{
-  text-decoration: none;
-}
-
-.mt-20{
-  margin-top: 20px;
+  font-family: 'Eastman-Medium';
+  min-height: auto;
 }
 
 .resume-entry img {
   max-width: 80px; /* Adjust based on your actual image size */
-  margin-right: 20px;
+  margin-right: 15px;
+  border-radius: 20px;
 }
 
 .resume-entry .resume-content {
@@ -196,6 +221,10 @@ h2 {
   margin-bottom: 0px;
 }
 
+.title{
+  font-weight: 900;
+}
+
 .resume-entry .date {
   font-size: 1em;
   color: #666;
@@ -206,6 +235,33 @@ h2 {
   font-size: 0.9em;
   line-height: 1.5;
   color: #333;
+}
+
+.resume-button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+  margin-top: 30px;
+  padding-right: 20px; /* Adds some space from the right edge, adjust as needed */
+}
+
+.view-resume-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-family: 'Eastman-Medium', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 40px;
+  width: 200px;
+}
+
+.view-resume-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 /* #endregion */
 
@@ -229,12 +285,6 @@ h2 {
 
 /* #region Testimonial Section */
 
-.testimonial-container {
-  max-width: 1170px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -253,11 +303,11 @@ h2 {
 }
 
 .testimonials-item {
-  background-color: #CEEBFA;
+  background-color: #f4f4f4;
   padding: 30px;
   border-radius: 30px;
   min-height: 255px;
-  font-family: 'Syne';
+  font-family: 'Eastman-Medium';
 }
 
 .testimonials-item .info{
@@ -297,38 +347,47 @@ h2 {
 .testimonials .swiper-pagination-bullet{
   height: 12px;
   width: 12px;
-  background-color: #1fa1e7;
+  background-color: black;
 }
 /* #endregion */
 
+
 /* #region Contact Me Section */
-.contact-form {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #f8f9fa; /* Adjust the background color as needed */
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+#ContactMe {
+  position: relative;
+  overflow: hidden; /* This ensures the arrow doesn't create scrollbars */
 }
-.contact-form .form-control {
-  border-color: transparent;
-  border-bottom-color: #000; /* Adjust the border color as needed */
-  border-radius: 0;
-  border-width: 2px;
-  color: black;
-  background-color: #f8f9fa;
+
+.mb-100{
+  margin-bottom: 100px;
 }
-.contact-form .form-control:focus {
-  box-shadow: none;
+
+.collaborate-arrow {
+  position: absolute;
+  right: 15%; /* Adjust as needed */
+  top: 28%; /* Adjust as needed */
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  z-index: 1; /* Ensures the arrow is above other elements */
 }
-.contact-form .btn-primary {
-  background-color: #000; /* Adjust the button background color as needed */
-  border: none;
-  border-radius: 30px;
-  padding: 10px 30px;
+.collaborate{
+  font-weight: 900;
+  font-size: 70px;
+  margin-top:100px;
 }
-.contact-form .btn-primary:hover {
-  background-color: #333; /* Adjust the button hover color as needed */
+.email-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 80px; /* Adjust as needed */
+}
+.email{
+  background-color: #dcf247; /* Light green color */
+  display: inline-block; /* Makes the background only as wide as the text */
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 80px;
+  font-weight: 900;
 }
 /* #endregion */
 
