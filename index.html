@@ -49,7 +49,7 @@
   </head>
 
   <body>
-
+    
     <div class="bg-black">
       <!--Navbar-->
       <nav class="navbar navbar-expand-lg py-1 fixed-top">
@@ -111,8 +111,8 @@
 
               <!--Call To Actions-->
               <div class="cta-container">
-                <button class="CTA HireMe">Hire Me</button>
-                <button class="CTA Resume">Resume</button>
+                <button class="CTA BookACall">Book A Call</button>
+                <button class="CTA Resume" id="downloadCvLink">Resume</button>
               </div>
 
             </div>
@@ -133,13 +133,14 @@
       </div>
     </section>
 
+    <!--Services-->
     <div class="bg-black">
-      <!--Services-->
+      
       <section class="bg-white p-5 border-top-transition border-bottom-transition" id="Skills">
         <div class="container">
-          <h2 class="text-center mb-5 pt-2 Eastman-Medium">SERVICES</h2>
+          <h2 class="text-center mb-5 pt-2 Eastman-Medium">Services</h2>
           <div class="row text-center g-4 justify-content-center mt-4">
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body text-center skillsCard">
                   <div class="h1 mb-3 mt-4">
@@ -158,7 +159,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body text-center skillsCard Eastman-Medium">
                   <div class="h1 mb-3 mt-4">
@@ -176,7 +177,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body text-center skillsCard">
                   <div class="h1 mb-2 mt-4">
@@ -193,7 +194,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body text-center skillsCard">
                   <div class="h1 mb-2 mt-4">
@@ -217,73 +218,393 @@
     <!--Experience-->
     <section class="bg-black" id="Experience">
       <div class="container">
-        <h2 class="text-center pt-5 Eastman-Medium text-white">Experience</h2>
+        <h2 class="text-center pt-5 mb-5 Eastman-Medium text-white">Experience</h2>
         <div class="experience-grid">
-
-          <div class="resume-entry" style="width: 450px;">
-            <img src="img/Experience/EYLogo.png" alt="EY Logo" />
+          <div class="resume-entry">
+            <img src="img/Experience/CG.png" alt="CG Logo" />
+            <div class="resume-content">
+              <div class="description">
+                <strong>Computer Guys</strong>
+              </div>
+              <div class="title">AI Software Engineer</div>
+              <div class="date Arial">Aug 2024 - Sep 2024</div>
+            </div>
+          </div>
+          <div class="resume-entry">
+            <img src="img/Experience/PK.png" alt="NYC Logo" />
+            <div class="resume-content">
+              <div class="description">
+                <strong>ProcoLink</strong>
+              </div>
+              <div class="title">AI Software Engineer</div>
+              <div class="date Arial">May 2024 - Aug 2024</div>
+            </div>
+          </div>
+          <div class="resume-entry">
+            <img src="img/Experience/EY.png" alt="EY Logo" />
             <div class="resume-content">
               <div class="description">
                 <strong>Ernst & Young</strong>
               </div>
-              <div class="title">Software Engineer Intern</div>
-              <div class="date">May 2023 - Sep 2023</div>
+              <div class="title">AI Software Engineer Intern</div>
+              <div class="date Arial">May 2023 - Sep 2023</div>
             </div>
           </div>
-    
-          <div class="resume-entry" style="width: 450px;">
-            <img src="img/Experience/NYCLogo.png" alt="NYC Logo" />
+          <div class="resume-entry">
+            <img src="img/Experience/NYC.png" alt="NYC Logo" />
             <div class="resume-content">
               <div class="description">
                 <strong>National Youth Council</strong>
               </div>
               <div class="title">Automation Engineer</div>
-              <div class="date">March 2023 - May 2023</div>
+              <div class="date Arial">March 2023 - May 2023</div>
             </div>
           </div>
-
-          <div class="resume-entry" style="width: 450px;">
-            <img src="img/Experience/EYLogo.png" alt="EY Logo" />
-            <div class="resume-content">
-              <div class="description">
-                <strong>Ernst & Young</strong>
-              </div>
-              <div class="title">Software Engineer Intern</div>
-              <div class="date">May 2023 - Sep 2023</div>
-            </div>
-          </div>
-    
-          <div class="resume-entry" style="width: 450px;">
-            <img src="img/Experience/NYCLogo.png" alt="NYC Logo" />
-            <div class="resume-content">
-              <div class="description">
-                <strong>National Youth Council</strong>
-              </div>
-              <div class="title">Automation Engineer</div>
-              <div class="date">March 2023 - May 2023</div>
-            </div>
-          </div>
-
-          <div class="resume-entry" style="width: 450px;">
-            <img src="img/Experience/NYCLogo.png" alt="NYC Logo" />
+          <div class="resume-entry hidden">
+            <img src="img/Experience/NYP.png" alt="NYC Logo" />
             <div class="resume-content">
               <div class="description">
                 <strong>Nanyang Polytechnic</strong>
               </div>
               <div class="title">Diploma In Business & Fintech</div>
-              <div class="date">Apr 2021 - Apr 2024</div>
+              <div class="date Arial">Apr 2021 - Apr 2024</div>
             </div>
           </div>
-    
           <!-- Add more resume-entry divs here for additional experiences -->
-          
         </div>
-
         <div class="resume-button-container">
-          <button class="view-resume-button">View More ▼</button>
-        </div>  
-        
+          <button class="view-resume-button" id="toggleButton" onclick="toggleExperience()">View More ▼</button>
+        </div>
       </div>
+    </section>
+
+    <!--Projects-->
+    <div class="bg-black">
+      <section class="p-5 bg-white border-top-transition" id="Projects">
+        <div class="container">
+          <h2 class="text-center mb-4 pt-2 Eastman-Medium">Projects</h2>
+          <div
+            class="row align-items-center justify-content-between first-project"
+          >
+            <div class="col-md order-md-2">
+              <img
+                src="img/Mockup/EcoThreadsMockUp.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md p-5 order-md-1">
+              <h2>
+                <img
+                  src="img/Logo/EcoThreadsLogo.png"
+                  alt=""
+                  class="project-logo"
+                />
+              </h2>
+              <p class="lead Eastman-Medium project-des">
+                EcoThreads is a marketplace platform for buying and selling
+                clothing, focusing on eco-friendly transactions. The platform
+                features a Stripe API-integrated E-Wallet and provides AI-powered
+                insights for admins
+              </p>
+              <img
+                src="img/TechStack/html.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="HTML"
+              />
+              <img
+                src="img/TechStack/css.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="CSS"
+              />
+              <img
+                src="img/TechStack/js.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="JavaScript"
+              />
+              <img
+                src="img/TechStack/angular.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Angular"
+              />
+              <img
+                src="img/TechStack/ionic.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Ionic"
+              />
+              <img
+                src="img/TechStack/firebase.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Firebase"
+              />
+              <img
+                src="img/TechStack/figma.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Figma"
+              />
+              <img
+                src="img/TechStack/typescript.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="TypeScript"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pt-2 projects">
+          <div class="row align-items-center justify-content-between">
+            <!-- Image Column -->
+            <div class="col-md order-md-1">
+              <img
+                src="img/Mockup/PocketStoreMockUp.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+  
+            <!-- Text Column -->
+            <div class="col-md p-5 order-md-2">
+              <h2>
+                <img
+                  src="img/Logo/PocketStoreLogo.png"
+                  alt=""
+                  class="project-logo"
+                />
+              </h2>
+              <p class="lead project-des Eastman-Medium">
+                PocketStore is an app to facilitate mobile device
+                loaning/purchasing with a Stripe API-integrated E-Wallet for
+                secure transactions
+              </p>
+              <img
+                src="img/TechStack/html.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="HTML"
+              />
+              <img
+                src="img/TechStack/css.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="CSS"
+              />
+              <img
+                src="img/TechStack/js.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="JavaScript"
+              />
+              <img
+                src="img/TechStack/angular.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Angular"
+              />
+              <img
+                src="img/TechStack/ionic.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Ionic"
+              />
+              <img
+                src="img/TechStack/firebase.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Firebase"
+              />
+              <img
+                src="img/TechStack/figma.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Figma"
+              />
+              <img
+                src="img/TechStack/typescript.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="TypeScript"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pt-2 projects">
+          <div class="row align-items-center justify-content-between">
+            <!-- Image Column -->
+            <div class="col-md order-md-2">
+              <img src="img/Mockup/RevokeCover.png" class="img-fluid" alt="" />
+            </div>
+  
+            <!-- Text Column -->
+            <div class="col-md p-5 order-md-1">
+              <h2>
+                <img src="img/Logo/RevokeLogo.png" alt="" class="project-logo" />
+              </h2>
+              <p class="lead project-des Eastman-Medium">
+                Revoke is an app that integrates four AI models together for
+                different use cases to efficiently extract information from PDFs,
+                optimizing data retrieval processes.
+              </p>
+              <img
+                src="img/TechStack/apps.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Microsoft Power Apps"
+              />
+              <img
+                src="img/TechStack/automate.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Microsoft Power Automate"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pt-2 projects">
+          <div class="row align-items-center justify-content-between">
+            <!-- Image Column -->
+            <div class="col-md order-md-1">
+              <img src="img/Mockup/GetGudCover.png" class="img-fluid" alt="" />
+            </div>
+  
+            <!-- Text Column -->
+            <div class="col-md p-5 order-md-2">
+              <h2>
+                <img src="img/Logo/GetGudLogo.png" alt="" class="project-logo" />
+              </h2>
+              <p class="lead project-des Eastman-Medium">
+                GetGud is a global game coaching service connecting learners with
+                coaches, facilitating skill development through online bookings
+              </p>
+              <img
+                src="img/TechStack/html.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="HTML"
+              />
+              <img
+                src="img/TechStack/css.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="CSS"
+              />
+              <img
+                src="img/TechStack/csharp.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="C#"
+              />
+              <img
+                src="img/TechStack/mysql.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="MySQL"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pt-2 projects">
+          <div class="row align-items-center justify-content-between">
+            <!-- Image Column -->
+            <div class="col-md order-md-2">
+              <img
+                src="img/Mockup/CognisnaceCover.png"
+                class="img-fluid"
+                style="width: 300%"
+                alt=""
+              />
+            </div>
+  
+            <!-- Text Column -->
+            <div class="col-md p-5 order-md-1">
+              <h2>
+                <img
+                  src="img/Logo/CognisanceLogo.png"
+                  alt=""
+                  class="project-logo"
+                />
+              </h2>
+              <p class="lead project-des Eastman-Medium">
+                Cognisance is an e-commerce platform focused on health and
+                wellness products, designed for easy access and purchase
+              </p>
+              <img
+                src="img/TechStack/html.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="HTML"
+              />
+              <img
+                src="img/TechStack/css.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="CSS"
+              />
+              <img
+                src="img/TechStack/python.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Python"
+              />
+              <img
+                src="img/TechStack/Flask.png"
+                class="project-tech-stack img-fluid"
+                alt=""
+                data-toggle="tooltip"
+                title="Flask"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!--Free Consultation-->
+    <section class="bg-lime consultation">
+      <div class="container">
+        <div>
+          <h2 class="Eastman pt-5">Have A Project Idea?</h2>
+          <h2 class="Eastman pb-5">Let's Discuss</h2>
+          <button class="consultation-button mb-5">Book A Free Consultation</button>
+        </div>
+        <img src="img/icon/Idea.png" alt="Idea" class="idea-icon pt-5 pb-5"/>
+      </div>
+      <img src="img/Icon/consultation-arrow.png" alt="consultation-arrow" class="consultation-arrow"/>
     </section>
 
     <!--Testimonials-->

@@ -1,47 +1,32 @@
-// To download resume on phone
-document.getElementById('downloadCvLink').addEventListener('click', function (e) {
-  // Check if the user is on a mobile device
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // Prevent the default action of the link
-    e.preventDefault();
-    
-    // Redirect to the server-side script to force download
-    window.location.href = 'download.php'; // Adjust the path accordingly
+let isExpanded = false; // Track the state of the experience section
+
+function toggleExperience() {
+  console.log('Toggle button clicked');
+  const allEntries = document.querySelectorAll('.experience-grid .resume-entry');
+  console.log('All entries:', allEntries);
+  const toggleButton = document.getElementById('toggleButton');
+
+  if (isExpanded) {
+    // If currently expanded, hide the extra entries
+    allEntries.forEach((entry, index) => {
+      if (index >= 4) { // Assuming you want to show only the first 4 entries initially
+        entry.classList.add('hidden'); // Add the hidden class
+        console.log('Hiding entry:', entry); // Log the entry being hidden
+      }
+    });
+    toggleButton.textContent = 'View More ▼'; // Change button text
+  } else {
+    // If currently collapsed, show the extra entries
+    allEntries.forEach((entry, index) => {
+      if (index >= 4) { // Assuming you want to show only the first 4 entries initially
+        entry.classList.remove('hidden'); // Remove the hidden class
+        console.log('Showing entry:', entry); // Log the entry being shown
+      }
+    });
+    toggleButton.textContent = 'View Less ▲'; // Change button text
   }
-  // For desktop users, the default "download" attribute behavior will proceed
-});
 
-
-//Submitting Contact Form
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  // Form data as an object
-  let formData = new FormData(this);
-
-  fetch('https://formspree.io/f/xvoeqqlr', {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    },
-  })
-  .then(response => {
-    if (response.ok) {
-      document.getElementById('form-response-succeed').textContent = 'Thanks for your submission!';
-      // Optionally, reset the form here
-      document.getElementById('contact-form').reset();
-    } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          document.getElementById('form-response-fail').textContent = data.errors.map(error => error.message).join(", ");
-        } else {
-          document.getElementById('form-response-fail').textContent = 'Oops! There was a problem with your submission.';
-        }
-      });
-    }
-  })
-  .catch(error => {
-    document.getElementById('form-response-fail').textContent = 'Oops! There was a problem with your submission.';
-  });
-});
+  // Toggle the state correctly
+  isExpanded = !isExpanded; // Change this line to toggle the state
+  console.log("isExpanded:", isExpanded); // Log the current state
+}

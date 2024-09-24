@@ -11,8 +11,6 @@ This portfolio was created using:
 - **JavaScript**
 - **Bootstrap**
 
-The reason behind building this portfolio with these fundamental technologies is to sharpen and enhance my understanding of the basics, ensuring a solid foundation in web development.
-
 ### 🌐 Explore My Work
 
 Feel free to browse through my projects and learn more about my journey in AI and software engineering.

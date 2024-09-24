@@ -30,6 +30,10 @@
 .Eastman-ExtraBold {
   font-family: "Eastman-ExtraBold";
 }
+
+.Arial {
+  font-family: Arial, sans-serif;
+}
 /* #endregion */
 
 /* #region Default Styles */
@@ -53,7 +57,7 @@ body::before {
 }
 
 .container {
-  max-width: 1100px; /* Adjust this value as needed */
+  max-width: 1020px; /* Adjust this value as needed */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -79,7 +83,6 @@ nav {
   margin-top: 0px;
 }
 .CTA{
-  padding: 5px 30px;
   border-radius: 30px;
   border: 4px solid black;
   font-size: 20px;
@@ -92,12 +95,14 @@ nav {
   color: white;
 }
 
-.HireMe{
+.BookACall{
+  padding: 5px 20px;
   background-color: #dcf247;
   margin-right: 8px;
 }
 
 .Resume{
+  padding: 5px 30px;
   background-color: white;
 }
 
@@ -162,6 +167,7 @@ nav {
   background-color:#f4f4f4;
   font-family: "Eastman-Medium";
   font-weight: 500;
+  width: 100%;
 }
 
 .skills-title {
@@ -189,10 +195,15 @@ h2 {
   grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
   gap: 15px; /* Space between grid items */
   padding: 20px 0;
+  width: 100%;
 }
 
 .experience-grid .resume-entry:nth-child(odd) {
   justify-self: end; /* Aligns to the end (right) of its grid cell */
+}
+
+.hidden {
+  display: none !important; /* Use !important to force the style */
 }
 
 .resume-entry {
@@ -203,6 +214,8 @@ h2 {
   align-items: center;
   font-family: 'Eastman-Medium';
   min-height: auto;
+  width: 100%;
+  
 }
 
 .resume-entry img {
@@ -260,27 +273,33 @@ h2 {
 }
 
 .view-resume-button:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 /* #endregion */
 
 /* #region Projects Section */
-.first-project{
-  margin-top: 100px;
-}
-
-.projects{
-  margin-top: 150px;
-}
-.project-logo{
-  width: 60%;
-  margin-bottom: 50px;
-}
-.project-des {
-  margin-bottom: 60px;
-  color: grey;
-}
+  .first-project{
+    margin-top: 50px;
+  }
+  
+  .projects{
+    margin-top: 50px;
+  }
+  
+  .project-tech-stack {
+    width: 5%;
+    margin-bottom: 10px;
+  }
+  
+  .project-logo{
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .project-des {
+    margin-bottom: 20px;
+    color: grey;
+  }
 /* #endregion */
 
 /* #region Testimonial Section */
@@ -351,6 +370,59 @@ h2 {
 }
 /* #endregion */
 
+/* #region Free Consultation Section */
+.bg-lime {
+  background-color: #dcf247;
+}
+
+.consultation {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Two columns: text and button in the first, image in the second */
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  position: relative;
+}
+
+.consultation-button {
+  border-radius: 40px;
+  border: 4px solid black;
+  font-size: 30px;
+  font-weight: 750;
+  padding: 7px 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.consultation-button:hover{
+  transform: scale(1.1);
+}
+
+.consultation .container {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Two columns: text and button in the first, image in the second */
+  align-items: center;
+  gap: 20px; /* Adjust gap between columns as needed */
+}
+
+.consultation h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0; /* Remove default margin */
+}
+
+.consultation-arrow {
+  position: absolute;
+  right: 55%; /* Adjust as needed */
+  top: 42%; /* Adjust as needed */
+  height: 120px;
+  z-index: 1; /* Ensures the arrow is above other elements */
+  transform: rotate(-15deg);
+}
+
+.idea-icon {
+  height: 400px;
+  justify-self: end; /* Align the image to the right */
+}
+/* #endregion */
 
 /* #region Contact Me Section */
 #ContactMe {
@@ -398,7 +470,6 @@ h2 {
 @media (min-width: 576px) {
   .CTA {
     font-size: 14px;
-    padding: 3px 20px;
     border: 3px solid black;
   }
 
@@ -411,7 +482,6 @@ h2 {
 @media (min-width: 768px) {
   .CTA {
     font-size: 15px;
-    padding: 5px 20px;
     border: 4px solid black;
   }
 
@@ -432,7 +502,6 @@ h2 {
 @media (min-width: 992px) {
   .CTA {
     font-size: 20px;
-    padding: 5px 30px;
   }
 
   .cta-container {
@@ -448,7 +517,6 @@ h2 {
 @media (min-width: 1200px) {
   .CTA {
     font-size: 20px;
-    padding: 6px 35px;
   }
 
   .cta-container {
